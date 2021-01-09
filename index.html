@@ -1,7 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <style>
+      body {
+        background-image: url("background.jpg");
+        font-family: Ubuntu, sans-serif;
+        font-size: 16px;  
+      }
+      h1 {
+        font-family: Ubuntu, sans-serif;
+        font-size: 46px;  
+        text-align: center;
+        color: rgb(0, 0, 0);
+      }
+
+      h2 {
+        font-family: Ubuntu, sans-serif;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid rgb(228, 186, 186);
+        padding: 15px;
+      }
+
+      h3 {
+        font-family: Ubuntu, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 25%;
+      }
+
+      button {
+        width: 100%;
+        background: rgb(228, 186, 186);
+        color: rgb(173, 116, 109);
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        margin: 20px 0;
+      }
+    </style>
     <title>Alisa's Self Care Tips</title>
-    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -14,36 +59,31 @@
         Recommended By Alisa K.
     </h2>
       
+    <img src="https://www.quotemaster.org/images/fb/fba6daef9fdb36310de922a54285b476.jpg" alt="quote">
+
     <p>
       You are not alone. Panic attacks are more common than you think - especially as a result
       of the effects of the Covid-19. Take a minute to read what helped me to get through hard
       times and don't forget to breath.
     </p>
       
-    <img src="https://i.pinimg.com/564x/b7/eb/c9/b7ebc9f3aa1e684a5c0c026b1dc98bdd.jpg">
-      
     <ul>
-        <li><a href="https://www.youtube.com/watch?v=vXZ5l7G6T2I">Breathing Exercise</a></li>
-        <p>
+        <li><h3><a href="https://www.youtube.com/watch?v=vXZ5l7G6T2I">Breathing Exercise</a></h3>
           Breathing is the first step to calm your body. when your body is calm, 
           your mind calms itself automatically after a while because it no more feels
           in danger (fight or fight affect).
-        </p>
+        </li>
         
-        <li><a href="https://www.wysa.io/">Wysa App</a></li>
-        <p>
+        <li><h3><a href="https://www.wysa.io/">Wysa App</a></h3>
           It's always best that when you're having an anxiety attack to find a person around
           you feel close enough to, to spill your feelings to. Even if they wouldn't be able
           to help, the act of talking your feelings out will help.
-        </p>
-        <p>
           but in case you are around strangers and you can't call your loved ones, there is 
           this adorable and soothing app - a penguin AI therapist. it includes psychology insights 
           and exercises. Very useful in moments of need and with getting out of your head.
-        </p>
+        </li>
 
-        <li>Music</li>
-        <p>
+        <li><h3>Music</h3>
           I recommend putting together a playlist of songs that calm you down. It can be songs
           that are quiet and soothing or ones that cheer you up. When you feel you're getting anxious,
           and talking to people dindn't help or you just don't feel like it, find a quiet place away
@@ -51,9 +91,26 @@
           You can use mine as an example: 
           <a href="https://open.spotify.com/playlist/0cs6VYf9pkqpRG3D58pO7M?si=RiNiIsakQeGN-_tfRfNM7Q"
           >Alisa's Chill Playlist</a>
-        </p>
-    
+          
+        </li>
     </ul>
+    <button>
+      If you need someone to talk to ♥
+    </button>
+
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        prompt("What is your email address?");
+
+        alert(
+          `Thanks, ${name}! I'll contact you soon! Meanwhile, don't forget to breathe ♥`
+        );
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
   </body>
   
 </html>
